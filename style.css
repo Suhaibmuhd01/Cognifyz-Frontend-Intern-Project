@@ -1,0 +1,94 @@
+#api-content {
+  margin: 20px;
+  padding: 15px;
+  background-color: #d4cfe9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#data-list {
+  list-style: none;
+  padding: 0;
+}
+
+#data-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* For mobile devices */
+  h1 {
+    font-size: 1.8rem;
+  }
+  /*  */
+  body {
+    background-color: rgb(127, 89, 175);
+  }
+  /*  */
+  .intro-text {
+    font-size: 18px;
+  }
+  img {
+    width: 50%;
+    height: 150px;
+  }
+  .project-description {
+    line-height: 1.5;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* For tablets and iPads */
+  h1 {
+    font-size: 2rem;
+  }
+  img {
+    width: 60%;
+    height: 190px;
+  }
+  .intro-text {
+    font-size: 22px;
+  }
+  .project-description {
+    line-height: 1.7;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* For laptops */
+  h1 {
+    font-size: 2.5rem;
+  }
+  img {
+    width: 70%;
+    height: auto;
+  }
+  .intro-text {
+    font-size: 22px;
+  }
+  .project-description {
+    line-height: 1.8;
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* For larger screens */
+  h1 {
+    font-size: 3rem;
+  }
+  img {
+    width: 60%;
+    height: auto;
+  }
+  .project-description {
+    line-height: 1.9;
+    font-size: 29px;
+  }
+  .intro-text {
+    font-size: 29px;
+  }
+}

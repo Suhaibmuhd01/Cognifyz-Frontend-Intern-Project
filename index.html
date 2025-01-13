@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="Author" content="Suhaib Muhammad Babangida" />
+    <meta name="Date" content="13 January 2025" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #user-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .user-card {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        width: 250px;
+        text-align: center;
+      }
+    </style>
+    <title>Cognifyz Technology</title>
+  </head>
+  <body style="background-color: #917edd">
+    <!-- Heading -->
+    <h1 class="highlight-text" style="color: #333; text-align: center">
+      Welcome to My Cognifyz Internship Project!
+    </h1>
+    <!-- headings ends -->
+    <p
+      class="intro-text"
+      style="color: #555; line-height: 1.5; margin-left: 10px"
+    >
+      This webpage serves as a starting point for my internship project at
+      Cognifyz Technologies. I'm excited to learn and develop my front-end
+      development skills during this experience. I will be working on a variety
+      of projects, including creating responsive layouts, implementing
+      interactive features, and exploring different web development
+      technologies.
+    </p>
+    <img
+      src="sd-image.jpeg"
+      alt="image of Software Development"
+      style="
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 7px;
+        border: 2px solid #ccc;
+        margin-bottom: 1rem;
+      "
+    />
+    <p
+      class="project-description"
+      style="
+        color: #663399;
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 20px;
+        margin-left: 10px;
+      "
+    >
+      This webpage demonstrates the foundational skills I've learned so far,
+      including basic HTML structure, inline CSS styling, and image insertion.
+      I'm eager to expand my knowledge and create more sophisticated web
+      projects throughout my internship.
+    </p>
+    <button
+      class="btn"
+      id="changeColorButton"
+      style="
+        background-color: #663399;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+      "
+    >
+      Read More!
+    </button>
+    <!-- API.... -->
+    <div id="api-content">
+      <h2 style="text-align: center; color: #663399">Dynamic Data from API</h2>
+      <div id="user-list"></div>
+      <ul></ul>
+
+      <!-- <ul id="data-list"></ul> -->
+    </div>
+
+    <script>
+      // Fetch API and modify multiple users
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then((response) => response.json())
+        .then((data) => {
+          const userList = document.getElementById("user-list");
+
+          // List of user IDs to edit and their new values
+          const edits = [
+            { id: 1, name: "John Doe", username: "Dev_suhaib" },
+            { id: 2, name: "Suhaib Muhammad", username: "manzo" },
+            { id: 3, name: "james udu eba", username: "NewUsername3" },
+            { id: 4, name: "Abubakar shehu", username: "Yalwawa" },
+            { id: 5, name: "Mukhtar Ghali", username: "Mangalios" },
+          ];
+
+          // Modify multiple users in the data
+          const updatedData = data.map((user) => {
+            const edit = edits.find((edit) => edit.id === user.id);
+            if (edit) {
+              return { ...user, ...edit }; // Overwrite the user fields with the edit
+            }
+            return user;
+          });
+
+          // Display the updated data
+          updatedData.forEach((user) => {
+            const userCard = document.createElement("div");
+            userCard.classList.add("user-card");
+
+            const name = document.createElement("h3");
+            name.textContent = user.name;
+
+            const username = document.createElement("p");
+            username.textContent = `Username: ${user.username}`;
+
+            userCard.appendChild(name);
+            userCard.appendChild(username);
+            userList.appendChild(userCard);
+          });
+        })
+        .catch((error) => {
+          console.error(
+            "There has been a problem with your fetch operation:",
+            error
+          );
+        });
+    </script>
+  </body>
+</html>
