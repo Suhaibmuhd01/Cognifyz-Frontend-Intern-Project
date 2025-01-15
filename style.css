@@ -1,3 +1,4 @@
+/* styling for API section */
 #api-content {
   margin: 20px;
   padding: 15px;
@@ -15,17 +16,85 @@
   padding: 8px 0;
   border-bottom: 1px solid #ddd;
 }
+/* form styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #917edd;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
+form {
+  background: #e6dfec;
+  padding: 17px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+form h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #663399;
+}
+
+label {
+  display: flex;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #663399;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #917edd;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+input:focus {
+  border-color: #663399;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 51, 153, 0.5);
+}
+
+button {
+  background-color: #663399;
+  color: #ffffff;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #917edd;
+}
+
+.error {
+  color: #cc0000;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+}
+/* Responsiveness */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /* For mobile devices */
   h1 {
     font-size: 1.8rem;
   }
-  /*  */
-  body {
-    background-color: rgb(127, 89, 175);
-  }
-  /*  */
+  /* form {
+    width: 64%;
+    padding: 10px;
+  } */
   .intro-text {
     font-size: 18px;
   }
@@ -90,5 +159,112 @@
   }
   .intro-text {
     font-size: 29px;
+  }
+}
+
+/* responsiveness for form */
+
+/* Mobile devices (320px - 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  form h2 {
+    font-size: 1.2rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  label {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+/* iPads and Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  form {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  form h2 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  label {
+    font-size: 1.3rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+/* Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  form {
+    width: 60%;
+    max-width: 400px;
+    padding: 30px;
+  }
+
+  form h2 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+  label {
+    font-size: 1.4rem;
+  }
+  button {
+    font-size: 1.1rem;
+  }
+}
+
+/* Larger Screens (1025px and above) */
+@media (min-width: 1025px) {
+  form {
+    width: 40%;
+    padding: 36px;
+    margin-top: 30px;
+  }
+
+  form h2 {
+    font-size: 2rem;
+  }
+  label {
+    font-size: 1.7rem;
+  }
+  input {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  button {
+    font-size: 1.2rem;
   }
 }
