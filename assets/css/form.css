@@ -1,36 +1,20 @@
-/* styling for API section */
-#api-content {
-  margin: 20px;
-  padding: 15px;
-  background-color: #d4cfe9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-#data-list {
-  list-style: none;
-  padding: 0;
-}
-
-#data-list li {
-  padding: 8px 0;
-  border-bottom: 1px solid #ddd;
-}
-/* form styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #917edd;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  margin: 0;
+  margin: calc(50%, -50%);
 }
 
 form {
   background: #e6dfec;
   padding: 17px;
   border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  place-content: center;
+  width: 500px;
+  margin-top: 60px;
+  margin: 0 auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 350px;
 }
@@ -85,88 +69,13 @@ button:hover {
   text-align: center;
   margin-top: 10px;
 }
-/* Responsiveness */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  /* For mobile devices */
-  h1 {
-    font-size: 1.8rem;
-  }
-  /* form {
-    width: 64%;
-    padding: 10px;
-  } */
-  .intro-text {
-    font-size: 18px;
-  }
-  img {
-    width: 50%;
-    height: 150px;
-  }
-  .project-description {
-    line-height: 1.5;
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  /* For tablets and iPads */
-  h1 {
-    font-size: 2rem;
-  }
-  img {
-    width: 60%;
-    height: 190px;
-  }
-  .intro-text {
-    font-size: 22px;
-  }
-  .project-description {
-    line-height: 1.7;
-    font-size: 22px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* For laptops */
-  h1 {
-    font-size: 2.5rem;
-  }
-  img {
-    width: 70%;
-    height: auto;
-  }
-  .intro-text {
-    font-size: 22px;
-  }
-  .project-description {
-    line-height: 1.8;
-    font-size: 23px;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-  /* For larger screens */
-  h1 {
-    font-size: 3rem;
-  }
-  img {
-    width: 60%;
-    height: auto;
-  }
-  .project-description {
-    line-height: 1.9;
-    font-size: 29px;
-  }
-  .intro-text {
-    font-size: 29px;
-  }
-}
 
 /* responsiveness for form */
 
 /* Mobile devices (320px - 480px) */
 @media (min-width: 320px) and (max-width: 480px) {
   body {
+    display: flex;
     flex-direction: column;
     padding: 10px;
   }
@@ -222,6 +131,7 @@ button:hover {
 }
 
 /* Laptops (769px - 1024px) */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   form {
     width: 60%;
@@ -246,10 +156,11 @@ button:hover {
 }
 
 /* Larger Screens (1025px and above) */
+
 @media (min-width: 1025px) {
   form {
     width: 40%;
-    padding: 36px;
+    padding: 30px;
     margin-top: 30px;
   }
 

@@ -15,15 +15,31 @@ The goal of this project was to build a responsive and interactive webpage that 
 
 ## Technologies Used
 
-*   HTML
+*  <li> HTML </li>
 *   CSS
 *   JavaScript
 
 ## Project Structure
 
-*   `index.html`: The main HTML file for the webpage.
-*   `style.css`: The external CSS file for styling the webpage.
-*   `script.js`: The JavaScript file for adding interactivity.
+Cognifyz-Frontend-Intern-Project/
+├── index.html
+├── index2.html
+├── css/
+│   ├── style.css
+│   ├── output.css
+├── js/
+│   ├── script.js
+├── images/
+│   ├── tech-image.jpeg
+│
+|
+├── node_modules/
+├── tailwind.config.js
+├── package.json
+├── package-lock.json
+├── LICENSE
+└── README.md
+
 
 ## How to Run the Project
 
