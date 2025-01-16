@@ -2,135 +2,202 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <meta name="Author" content="Suhaib Muhammad Babangida" />
-    <meta name="Date" content="13 January 2025" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- custom css styling-->
-    <link rel="stylesheet" href="style.css" />
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Qzr3m1mj9d3/ON+zE59PbMvYqfz1ebG7Kuw8gZQjzlZBlOsa1CljNkPuaEw+FdxB"
-      crossorigin="anonymous"
-    />
-    <style>
-      #user-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+    <meta name="author" content="Suhaib Muhammad Babangida" />
+    <meta name="date" content="16 January 2025" />
 
-      .user-card {
-        border: 1px solid #ccc;
-        padding: 20px;
-        margin: 10px;
-        border-radius: 5px;
-        width: 250px;
-        text-align: center;
-      }
-    </style>
-    <title>Cognifyz Technology</title>
-  </head>
-  <body style="background-color: #917edd">
-    <!-- Heading -->
-    <h1 class="highlight-text" style="color: #333; text-align: center">
-      Welcome to My Cognifyz Internship Project!
-    </h1>
-    <!-- headings ends -->
-    <p
-      class="intro-text"
-      style="color: #555; line-height: 1.5; margin-left: 10px"
-    >
-      This webpage serves as a starting point for my internship project at
-      Cognifyz Technologies. I'm excited to learn and develop my front-end
-      development skills during this experience. I will be working on a variety
-      of projects, including creating responsive layouts, implementing
-      interactive features, and exploring different web development
-      technologies.
-    </p>
-    <img
-      src="sd-image.jpeg"
-      alt="image of Software Development"
-      style="
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 7px;
-        border: 2px solid #ccc;
-        margin-bottom: 1rem;
-      "
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
     />
-    <p
-      class="project-description"
-      style="
-        color: #663399;
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 20px;
-        margin-left: 10px;
-      "
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+
+    <!-- Responsiveness CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body
+    style="
+      font-family: 'Roboto', sans-serif;
+      background-color: #f3f0ff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    "
+  >
+    <!-- Introduction Section -->
+    <div
+      class="intro-section animate__animated animate__fadeIn"
+      style="text-align: center; padding: 20px; animation: fadeIn 1.5s"
     >
-      This webpage demonstrates the foundational skills I've learned so far,
-      including basic HTML structure, inline CSS styling, and image insertion.
-      I'm eager to expand my knowledge and create more sophisticated web
-      projects throughout my internship.
-    </p>
+      <h1
+        class="animate__animated animate__fadeIn"
+        style="
+          font-size: 2.5rem;
+          color: #6a1b9a;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        "
+      >
+        Welcome to My Cognifyz Internship Project!
+      </h1>
+      <p
+        style="
+          line-height: 1.6;
+          color: #555;
+          margin: 0 10px;
+          font-size: 16px;
+
+          line-height: 1.6;
+          color: #555;
+          margin: 0 10px;
+        "
+      >
+        This webpage serves as a starting point for my internship project at
+        Cognifyz Technologies. I'm excited to learn and develop my front-end
+        development skills during this experience. I will be working on a
+        variety of projects, including creating responsive layouts, implementing
+        interactive features, and exploring different web development
+        technologies
+      </p>
+      <img
+        src="./assets/images/tech-image.jpeg"
+        alt="Software Development Image"
+        class="animate__zoomIn animate__bounce"
+        style="
+          animation: fadeInUp 1.6s;
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+          margin-top: 20px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease-in-out;
+        "
+        onmouseover="this.style.width='60%';
+        this.style.height='200px'"
+        onmouseout="this.style.width='40%px';
+        this.style.height='150px'"
+      />
+      <p
+        style="
+          color: #663399;
+          font-family: 'Roboto', sans-serif;
+          margin-top: 20px;
+          margin-left: 10px;
+          font-size: 16px;
+        "
+      >
+        This webpage demonstrates the foundational skills I've learned so far,
+        including basic HTML structure, inline CSS styling, and image insertion.
+        I'm eager to expand my knowledge and create more sophisticated web
+        projects throughout my internship.
+      </p>
+    </div>
+
+    <!-- Read More Button -->
     <button
-      class="btn"
-      id="changeColorButton"
+      class="btn animate__animated animate__pulse"
+      onclick="changeColor()"
       style="
-        background-color: #663399;
+        background-color: #6a1b9a;
         color: white;
-        border: none;
+        padding: 12px 20px;
         width: 130px;
-        padding: 10px 20px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        border: none;
         border-radius: 5px;
         cursor: pointer;
-        display: block;
-        margin: 20px auto;
+        font-weight: bold;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        transform: translateY(-3px);
       "
+      onmouseover="this.style.backgroundColor='#9c27b0';
+       this.style.transform='translateY(-3px)'"
+      onmouseout="this.style.backgroundColor='#6a1b9a';
+       this.style.transform='translateY(-3px)'"
+      ;
     >
       Read More!
     </button>
-    <!-- API.... -->
-    <div id="api-content">
-      <h2 style="text-align: center; color: #663399">Data from API</h2>
-      <div id="user-list"></div>
-      <ul></ul>
 
-      <!-- <ul id="data-list"></ul> -->
+    <!-- API Section -->
+    <div
+      id="api-content"
+      class="animate__animated animate__fadeInUp"
+      style="
+        padding: 20px;
+        background-color: #ede7f6;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        animation: fadeInUp 2.5s;
+      "
+    >
+      <h2 style="text-align: center; color: #6a1b9a">Data from API</h2>
+      <div
+        id="user-list"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 20px;
+        "
+      ></div>
     </div>
 
+    <!-- JavaScript -->
     <script>
-      // Fetch API and modify multiple users
+      function changeColor() {
+        //  document.body.style.backgroundColor = "#ede7f6";
+        document.body.style.backgroundColor =
+          "#" + Math.floor(Math.random() * 16777215).toString(16);
+      }
+
       fetch("https://jsonplaceholder.typicode.com/users")
         .then((response) => response.json())
         .then((data) => {
           const userList = document.getElementById("user-list");
-
-          // List of user IDs to edit and their new values
           const edits = [
             { id: 1, name: "John Doe", username: "Dev_suhaib" },
             { id: 2, name: "Suhaib Muhammad", username: "manzo" },
-            { id: 3, name: "james udu eba", username: "NewUsername3" },
-            { id: 4, name: "Abubakar shehu", username: "Yalwawa" },
+            { id: 3, name: "James Udu Eba", username: "NewUsername3" },
+            { id: 4, name: "Abubakar Shehu", username: "Yalwawa" },
             { id: 5, name: "Mukhtar Ghali", username: "Mangalios" },
           ];
 
-          // Modify multiple users in the data
           const updatedData = data.map((user) => {
             const edit = edits.find((edit) => edit.id === user.id);
             if (edit) {
-              return { ...user, ...edit }; // Overwrite the user fields with the edit
+              return { ...user, ...edit };
             }
             return user;
           });
 
-          // Display the updated data
           updatedData.forEach((user) => {
             const userCard = document.createElement("div");
             userCard.classList.add("user-card");
+            userCard.style = `
+              background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+              color: white;
+              padding: 20px;
+              margin: 10px;
+              border-radius: 10px;
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+              transition: transform 0.3s ease;
+            `;
+
+            userCard.addEventListener("mouseover", () => {
+              userCard.style.transform = "scale(1.05)";
+            });
+
+            userCard.addEventListener("mouseout", () => {
+              userCard.style.transform = "scale(1)";
+            });
 
             const name = document.createElement("h3");
             name.textContent = user.name;
