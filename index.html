@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,122 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Suhaib Muhammad Babangida" />
     <meta name="date" content="16 January 2025" />
+    <title>Cognifyz Internship Project</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM6g0g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5"
+      crossorigin="anonymous"
+    />
 
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <!-- scss file link -->
+    <link rel="stylesheet" href="./assets/scss/style.scss" />
     <!-- Animate.css -->
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
-
-    <!-- Responsiveness CSS -->
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body
-    style="
-      font-family: 'Roboto', sans-serif;
-      background-color: #f3f0ff;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    "
+    class="bg-gradient-to-r from-purple-700 via-indigo-500 to-pink-500 font-poppins md:bg-gradient-to-b lg:bg-gradient-to-l"
   >
+    <!-- Header -->
+    <header>
+      <nav class="w-full p-4 bg-purple-700">
+        <div class="flex items-center justify-between mx-auto max-w-7xl">
+          <div class="text-2xl font-semibold text-white">SMB Technology</div>
+          <div class="lg:hidden">
+            <button class="text-white" onclick="toggleMenu()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <ul class="hidden space-x-6 lg:flex">
+            <li><a href="#" class="text-white hover:text-gray-400">Home</a></li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-400">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-400">Services</a>
+            </li>
+            <li>
+              <a href="index2.html" class="text-white hover:text-gray-400"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          id="mobile-menu"
+          class="flex-col items-start hidden p-4 space-y-4 bg-purple-700 lg:hidden"
+        >
+          <a href="#" class="block w-full text-white">Home</a>
+          <a href="#" class="block w-full text-white">About</a>
+          <a href="#" class="block w-full text-white">Services</a>
+          <a href="index2.html" class="block w-full text-white">Contact</a>
+        </div>
+      </nav>
+    </header>
     <!-- Introduction Section -->
     <div
-      class="intro-section animate__animated animate__fadeIn"
-      style="text-align: center; padding: 20px; animation: fadeIn 1.5s"
+      id="intro"
+      class="p-5 text-center animate__animated animate__fadeInDown"
     >
       <h1
-        class="animate__animated animate__fadeIn"
-        style="
-          font-size: 2.5rem;
-          color: #6a1b9a;
-          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        "
+        class="text-4xl font-bold text-purple-700 animate__animated animate__bounceIn"
       >
         Welcome to My Cognifyz Internship Project!
       </h1>
-      <p
-        style="
-          line-height: 1.6;
-          color: #555;
-          margin: 0 10px;
-          font-size: 16px;
-
-          line-height: 1.6;
-          color: #555;
-          margin: 0 10px;
-        "
-      >
-        This webpage serves as a starting point for my internship project at
-        Cognifyz Technologies. I'm excited to learn and develop my front-end
-        development skills during this experience. I will be working on a
-        variety of projects, including creating responsive layouts, implementing
-        interactive features, and exploring different web development
-        technologies
+      <p class="my-3 text-lg text-gray-700">
+        This webpage is the cornerstone of my journey at Cognifyz Technologies,
+        marking the beginning of an exciting internship experience. It reflects
+        not just a demonstration of foundational front-end development skills
+        but also my dedication to learning, growing, and solving real-world
+        problems through code. From implementing responsive layouts to creating
+        dynamic, interactive features, every element on this page is a testament
+        to the knowledge I've gained so far and the curiosity that drives me to
+        explore further. The web development landscape is vast, with endless
+        possibilities for creating seamless user experiences, and this project
+        serves as the platform to experiment with and refine those skills. This
+        internship challenges me to push beyond my limits, to think critically,
+        and to bring ideas to life with precision and creativity. As I delve
+        deeper into the intricacies of front-end frameworks, CSS styling, and
+        API integrations, I look forward to building robust web solutions that
+        not only meet expectations but exceed them. This initial webpage
+        symbolizes my commitment to excellence, attention to detail, and the
+        ambition to grow into a skilled professional capable of making a
+        meaningful impact in the tech world.
       </p>
+
       <img
+        id="introImage"
         src="./assets/images/tech-image.jpeg"
         alt="Software Development Image"
-        class="animate__zoomIn animate__bounce"
-        style="
-          animation: fadeInUp 1.6s;
-          max-width: 100%;
-          height: auto;
-          border-radius: 10px;
-          margin-top: 20px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          transition: transform 0.3s ease-in-out;
-        "
-        onmouseover="this.style.width='60%';
-        this.style.height='200px'"
-        onmouseout="this.style.width='40%px';
-        this.style.height='150px'"
+        class="w-full max-w-lg mx-auto transition-transform duration-300 rounded-lg shadow-lg hover:scale-105 animate__animated animate__zoomIn"
       />
-      <p
-        style="
-          color: #663399;
-          font-family: 'Roboto', sans-serif;
-          margin-top: 20px;
-          margin-left: 10px;
-          font-size: 16px;
-        "
-      >
-        This webpage demonstrates the foundational skills I've learned so far,
-        including basic HTML structure, inline CSS styling, and image insertion.
-        I'm eager to expand my knowledge and create more sophisticated web
-        projects throughout my internship.
+      <p class="mt-5 text-lg text-purple-700">
+        Every component of this webpage has been carefully designed to
+        demonstrate my skills and align with the tasks assigned during my
+        internship at Cognifyz Technologies. From implementing responsive
+        designs using Tailwind CSS to integrating external APIs for dynamic
+        content, this project highlights my ability to apply modern front-end
+        development tools effectively. The animations, hover effects, and
+        intuitive layout are aimed at creating a seamless and engaging user
+        experience. As I work on tasks like refactoring to Tailwind, utilizing
+        framework components, and customizing styles to meet specific
+        requirements, I am gaining hands-on experience in building scalable and
+        maintainable web applications. This project also showcases my ability to
+        follow instructions, adapt to new frameworks, and produce high-quality
+        deliverables under deadlines. By the end of this internship, I aim to
+        have a comprehensive understanding of front-end development practices
+        and the confidence to tackle complex projects. This webpage is more than
+        just a deliverable, it is a reflection of my commitment to learning,
+        improving, and contributing meaningfully to the goals of Cognifyz
+        Technologies. This webpage is the beginning of a journey filled with
+        opportunities to learn, innovate, and grow, and I am excited to see
+        where this path takes me in my career at Cognifyz Technologies.
       </p>
     </div>
 
     <!-- Read More Button -->
     <button
-      class="btn animate__animated animate__pulse"
+      id="readMoreButton"
+      class="block px-6 py-3 mx-auto font-bold text-white transition-transform duration-300 bg-purple-700 rounded-lg shadow-md animate__animated animate__pulse hover:bg-purple-600 hover:-translate-y-1"
       onclick="changeColor()"
-      style="
-        background-color: #6a1b9a;
-        color: white;
-        padding: 12px 20px;
-        width: 130px;
-        margin: 0 auto;
-        display: block;
-        text-align: center;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        transform: translateY(-3px);
-      "
-      onmouseover="this.style.backgroundColor='#9c27b0';
-       this.style.transform='translateY(-3px)'"
-      onmouseout="this.style.backgroundColor='#6a1b9a';
-       this.style.transform='translateY(-3px)'"
-      ;
     >
       Read More!
     </button>
@@ -129,31 +154,61 @@
     <!-- API Section -->
     <div
       id="api-content"
-      class="animate__animated animate__fadeInUp"
-      style="
-        padding: 20px;
-        background-color: #ede7f6;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        animation: fadeInUp 2.5s;
-      "
+      class="p-5 mt-10 bg-purple-100 rounded-lg shadow-lg animate__animated animate__fadeInUp"
     >
-      <h2 style="text-align: center; color: #6a1b9a">Data from API</h2>
+      <h2 class="text-2xl font-semibold text-center text-purple-700">
+        Data from API
+      </h2>
       <div
         id="user-list"
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          padding: 20px;
-        "
+        class="flex flex-wrap justify-center gap-5 mt-5"
       ></div>
     </div>
 
+    <!-- Footer -->
+    <footer class="w-full py-6 text-center text-white bg-purple-700">
+      <div class="flex flex-col items-center mx-auto space-y-4 max-w-7xl">
+        <p class="text-xl font-bold">
+          &copy;<span id="year"></span> SMB Technologies
+        </p>
+        <div class="flex space-x-6">
+          <a
+            href="https://www.instagram.com/iam_suhaib_mb/"
+            target="_blank"
+            class="text-white hover:text-pink-400"
+          >
+            <i class="text-2xl fa fa-instagram"></i>
+          </a>
+          <a
+            href="https://x.com/suhaibmuhd22"
+            class="text-white hover:text-black-400"
+          >
+            <i class="text-2xl fa fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/suhaib-muhammad-babangida-b57674279"
+            class="text-white hover:text-blue-500"
+          >
+            <i class="text-2xl fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://wa.me/08129140311"
+            class="text-white hover:text-green-800"
+          >
+            <i class="text-2xl fa fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
     <!-- JavaScript -->
     <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+
       function changeColor() {
-        //  document.body.style.backgroundColor = "#ede7f6";
         document.body.style.backgroundColor =
           "#" + Math.floor(Math.random() * 16777215).toString(16);
       }
@@ -162,60 +217,19 @@
         .then((response) => response.json())
         .then((data) => {
           const userList = document.getElementById("user-list");
-          const edits = [
-            { id: 1, name: "John Doe", username: "Dev_suhaib" },
-            { id: 2, name: "Suhaib Muhammad", username: "manzo" },
-            { id: 3, name: "James Udu Eba", username: "NewUsername3" },
-            { id: 4, name: "Abubakar Shehu", username: "Yalwawa" },
-            { id: 5, name: "Mukhtar Ghali", username: "Mangalios" },
-          ];
 
-          const updatedData = data.map((user) => {
-            const edit = edits.find((edit) => edit.id === user.id);
-            if (edit) {
-              return { ...user, ...edit };
-            }
-            return user;
-          });
-
-          updatedData.forEach((user) => {
+          data.forEach((user) => {
             const userCard = document.createElement("div");
-            userCard.classList.add("user-card");
-            userCard.style = `
-              background: linear-gradient(135deg, #6a1b9a, #9c27b0);
-              color: white;
-              padding: 20px;
-              margin: 10px;
-              border-radius: 10px;
-              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-              transition: transform 0.3s ease;
-            `;
-
-            userCard.addEventListener("mouseover", () => {
-              userCard.style.transform = "scale(1.05)";
-            });
-
-            userCard.addEventListener("mouseout", () => {
-              userCard.style.transform = "scale(1)";
-            });
-
-            const name = document.createElement("h3");
-            name.textContent = user.name;
-
-            const username = document.createElement("p");
-            username.textContent = `Username: ${user.username}`;
-
-            userCard.appendChild(name);
-            userCard.appendChild(username);
+            userCard.className =
+              "bg-gradient-to-r from-purple-700 to-purple-500 text-white p-5 w-60 h-40 rounded-lg shadow-md flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300";
+            userCard.innerHTML = `<h3 class="text-lg font-semibold">${user.name}</h3><p>Username: ${user.username}</p>`;
             userList.appendChild(userCard);
           });
         })
-        .catch((error) => {
-          console.error(
-            "There has been a problem with your fetch operation:",
-            error
-          );
-        });
+        .catch((error) => console.error("Error fetching API data:", error));
+
+      let newYear = new Date().getFullYear();
+      const currentYear = (document.getElementById("year").innerHTML = newYear);
     </script>
   </body>
 </html>

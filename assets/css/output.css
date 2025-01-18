@@ -1,0 +1,149 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: linear-gradient(to right, #6a0dad, #4b8be6);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  background-color: #6a0dad;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header .nav .nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+header .nav .nav-item:hover {
+  color: #ff69b4;
+}
+header #mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #6a0dad;
+  padding: 1rem;
+}
+header #mobile-menu a {
+  color: white;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+header #mobile-menu a:hover {
+  color: #ff69b4;
+}
+header .lg:hidden {
+  display: block;
+}
+
+#intro {
+  padding: 2rem;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+#intro h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #6a0dad;
+  animation: bounceIn 1s ease-in-out;
+}
+#intro p {
+  font-size: 1.125rem;
+  color: gray;
+  margin: 1rem 0;
+}
+
+#readMoreButton {
+  background-color: #6a0dad;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+#readMoreButton:hover {
+  background-color: #4b8be6;
+  transform: translateY(-5px);
+}
+
+#api-content {
+  background-color: #f3e8ff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#api-content .user-card {
+  background: #6a0dad;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  width: 18rem;
+  height: 10rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+#api-content .user-card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #6a0dad;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+}
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+footer .social-links a {
+  color: white;
+  font-size: 1.5rem;
+}
+footer .social-links a:hover {
+  color: #ff69b4;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: #6a0dad;
+  }
+  #mobile-menu {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

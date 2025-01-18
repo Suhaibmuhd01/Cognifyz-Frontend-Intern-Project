@@ -4,8 +4,10 @@
   "description": "This document outlines my internship experience at Cognify Technologies. It covers the projects I worked on, the skills I developed, the challenges I faced, and the valuable lessons I learned during my time at the company.",
   "main": "index.html",
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "sass": "sass assets/scss/style.scss assets/css/output.css" 
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Suhaibmuhd01/Cognifyz-Frontend-Intern-Project.git"
@@ -21,10 +23,13 @@
   },
   "homepage": "https://github.com/Suhaibmuhd01/Cognifyz-Frontend-Intern-Project#readme",
   "devDependencies": {
+    "sass": "^1.83.4",
     "tailwindcss": "^3.4.17"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "animate.css": "^4.1.1",
     "validator": "^13.12.0"
   }

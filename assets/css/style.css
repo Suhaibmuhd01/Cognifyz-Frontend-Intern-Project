@@ -1,0 +1,42 @@
+/* Responsive Styling */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .user-card {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .user-card {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  img {
+    width: 70%;
+  }
+
+  .user-card {
+    width: 60%;
+  }
+}
