@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./index2.html",
+    "./form.html",
     "./css/**/*.css",
     "./js/**/*.js"
   ],
@@ -12,6 +12,9 @@ module.exports = {
         customPurple: '#6a1b9a',
         primary: "#1D4ED8",
         secondary: "#9333EA",
+        purple: "#A78BFA",
+        white: "#ffffff",
+        gray: "#9CA3AF",
         accent: "#e6dfec",
         customBlue: '#3b82f6',
         customPink: '#ec4899',

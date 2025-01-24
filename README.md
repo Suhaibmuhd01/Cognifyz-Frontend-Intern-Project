@@ -15,7 +15,7 @@ The goal of this project was to build a responsive and interactive webpage that 
 
 ## Technologies Used
 
-*  <li> HTML </li>
+*   HTML 
 *   CSS
 *   JavaScript
 
@@ -23,7 +23,7 @@ The goal of this project was to build a responsive and interactive webpage that 
 
 Cognifyz-Frontend-Intern-Project/
 ├── index.html
-├── index2.html
+├── form.html
 ├── css/
 │   ├── style.css
 │   ├── output.css
