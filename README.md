@@ -16,9 +16,10 @@ The goal of this project was to build a responsive and interactive webpage while
 
 ## Technologies Used
 
-<<<<<<< HEAD
 *   HTML 
 *   CSS
+*   Tailwind
+*   scss
 *   JavaScript
 
 ## Project Structure
@@ -41,7 +42,7 @@ Cognifyz-Frontend-Intern-Project/
 ├── package-lock.json
 ├── LICENSE
 └── README.md
-=======
+
 - **HTML** - Markup structure of the webpage
 - **CSS** - Styling, including Sass preprocessing
 - **JavaScript** - Interactive functionality and API integration
