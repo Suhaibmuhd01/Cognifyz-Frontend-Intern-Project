@@ -50,7 +50,6 @@ Cognifyz-Frontend-Intern-Project/
 - **Sass** - CSS preprocessor used for organizing styles and defining variables
 
 ## Key Milestones & Tasks Completed
->>>>>>> 119c9b026cbdbd25d9772ce149448dac1d8af1a9
 
 1. **HTML & CSS Basics**: Developed the structure and styling of the webpage.
 2. **Responsive Design**: Ensured the webpage adapts to different screen sizes using Tailwind CSS and media queries.
@@ -62,7 +61,8 @@ Cognifyz-Frontend-Intern-Project/
 ## How to Run the Project
 
 1. Clone the repository: `git clone https://github.com/suhaibmuhd01/cognifyz-frontend-intern.git`
-2. Open `index.html` in your web browser.
+2. run `npm install` in your terminal.
+3. Open `index.html` in your web browser.
 
 ## Features
 
