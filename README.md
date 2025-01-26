@@ -24,7 +24,7 @@ The goal of this project was to build a responsive and interactive webpage while
 
 ## Project Structure
 
-Cognifyz-Frontend-Intern-Project/
+<!-- Cognifyz-Frontend-Intern-Project/
 ├── index.html
 ├── form.html
 ├── css/
@@ -41,7 +41,7 @@ Cognifyz-Frontend-Intern-Project/
 ├── package.json
 ├── package-lock.json
 ├── LICENSE
-└── README.md
+└── README.md -->
 
 - **HTML** - Markup structure of the webpage
 - **CSS** - Styling, including Sass preprocessing
