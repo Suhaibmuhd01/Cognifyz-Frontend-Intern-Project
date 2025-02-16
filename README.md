@@ -16,7 +16,8 @@ The goal of this project was to build a responsive and interactive webpage while
 
 ## Technologies Used
 
-*   HTML 
+
+*   HTM
 *   CSS
 *   Tailwind
 *   scss
@@ -84,7 +85,12 @@ Suhaib Muhammad Babangida (Dev)
 
 ## Acknowledgments
 
+
+*   Cognifyz Technologies for providing the internship opportunity.
+
 - **Cognifyz Technologies** for providing the internship opportunity and valuable guidance throughout the project.
 - **Muhammad Nadheer** (Brother) for his unwavering support, help, and guidance in completing this project.
+
+
 
 
