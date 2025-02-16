@@ -1,0 +1,164 @@
+// Variables for colors and fonts
+$primary-color: #6a0dad;
+$secondary-color: #4b8be6;
+$font-family: 'Poppins', sans-serif;
+$font-size-base: 16px;
+$background-gradient: linear-gradient(to right, $primary-color, $secondary-color);
+
+// General Styles
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  background: $background-gradient;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  background-color: $primary-color;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    .nav-item {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem;
+      &:hover {
+        color: #ff69b4;
+      }
+    }
+  }
+
+  // Mobile Menu Styles
+  #mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: $primary-color;
+    padding: 1rem;
+    a {
+      color: white;
+      padding: 0.5rem 0;
+      text-decoration: none;
+      &:hover {
+        color: #ff69b4;
+      }
+    }
+  }
+
+  // Mobile Toggle
+  .lg:hidden {
+    display: block;
+  }
+}
+
+#intro {
+  padding: 2rem;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $primary-color;
+    animation: bounceIn 1s ease-in-out;
+  }
+  p {
+    font-size: 1.125rem;
+    color: gray;
+    margin: 1rem 0;
+  }
+}
+
+#readMoreButton {
+  background-color: $primary-color;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: $secondary-color;
+    transform: translateY(-5px);
+  }
+}
+
+#api-content {
+  background-color: #f3e8ff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .user-card {
+    background: $primary-color;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    width: 18rem;
+    height: 10rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    a {
+      color: white;
+      font-size: 1.5rem;
+      &:hover {
+        color: #ff69b4;
+      }
+    }
+  }
+}
+
+// Media Queries for Responsiveness
+@media (max-width: 768px) {
+  body {
+    background: $primary-color;
+  }
+
+  #mobile-menu {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
